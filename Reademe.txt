@@ -1,0 +1,4 @@
+Aplikacija je uradjena u .Net Core MVC-u sa razor pageovima (boostrap klasama). 
+Na navigation meniju se nalazi dugme za upload (Upload Results) koji otvara formu za upload podataka (CSV file-a), i nakon kojeg se prikazuju uplodovani podaci.
+Takodjer, na meniju se nalazi i dugme za prikaz ukupnih rezultata (The Results) koji ispisuje podatke iz tabele.
+U Aplikaciji se nalazi i seeder koji kada se aplikacija pokrene automatski kreira bazu i puni je podacima koji su upisani u seederu.
