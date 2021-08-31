@@ -19,8 +19,8 @@ namespace USelection.Web.Controllers
 {
     public class ResultsController : Controller
     {
-        public USElectionContext _context;
-        public ResultsController(USElectionContext context)
+        public USelection2Context _context;
+        public ResultsController(USelection2Context context)
         {
             _context = context;
         }
@@ -84,8 +84,8 @@ namespace USelection.Web.Controllers
             {
 
                 var Error = new Database.Exception();
-                Error.Poruka = "(error code: Please insert file )";
-
+                Error.Poruka = "(error code: Please insert file! )";
+                TempData["porukaError"] = "Please insert file!";
                 _context.Exceptions.Add(Error);
                 _context.SaveChanges();
             }

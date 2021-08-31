@@ -2,20 +2,30 @@
 
 @{
     ViewData["Title"] = "Index";
+    var porukaError = (string)TempData["porukaError"];
 }
 
 
-<br /><br />
+<br />
+<br />
 
 <h3 class="text-center">Here u can upload Results</h3>
 
 <br />
 <hr />
 <h4 class="text-center">***</h4>
-<hr /><br /><br />
+<hr />
+<br />
+<br />
 
 
 
+@if (porukaError != null)
+{
+    <div class="alert alert-danger" role="alert" id="porukaBox">
+        @porukaError
+    </div>
+}
 
 
 
