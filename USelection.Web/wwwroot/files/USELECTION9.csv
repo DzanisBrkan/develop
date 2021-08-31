@@ -1,0 +1,6 @@
+﻿Constituency,Name,Votes,Error
+New York,Donald Trump,11111,FALSE
+New York,Donald Trump,11111,TRUE
+New York,Hillary Clinton,11111,TRUE
+New York,Hillary Clinton,333333,TRUE
+New York,Hillary Clinton,55555,FALSE

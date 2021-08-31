@@ -1,0 +1,238 @@
+﻿
+@using USelection.Web.ViewModels
+
+@model USelection.Web.ViewModels.RezultatIndexVM
+
+@{
+    ViewData["Title"] = "Index";
+    var porukaSuccess = (string)TempData["porukaSuccess"];
+    var porukaWarning = (string)TempData["porukaWarning"];
+    var porukaError = (string)TempData["porukaError"];
+
+
+}
+<br /><br /><br />
+
+<h3 class="text-center">Presidential election results</h3>
+
+<br />
+<hr />
+<h4 class="text-center">***</h4>
+<hr /><br /><br />
+
+
+
+
+
+
+
+<div>
+
+
+
+
+
+    <div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            New York
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="border border-secondary rounded">
+                            <table class="table">
+                                <thead class="bg-light">
+
+                                    <tr>
+                                        <th>Candidates</th>
+                                        <th>Votes</th>
+                                        <th>Error</th>
+                                        <th>Percentage</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+                                        @foreach (var x in Model.row)
+                                        {
+
+                                            @if (x.IzbornaJedinica == "New York")
+                                            {
+                                                <tr>
+                                                    <td>@x.Kandidat</td>
+                                                    <td>@x.BrojOsvojenihGlasova</td>
+                                                    <td>@x.OverrideFile</td>
+                                                    <td>@x.Percentage</td>
+
+                                                </tr>
+                                            }
+                                        }
+
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Washington
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="border border-secondary rounded">
+                            <table class="table">
+                                <thead class="bg-light">
+
+                                    <tr>
+                                        <th>Candidates</th>
+                                        <th>Votes</th>
+                                        <th>Error</th>
+                                        <th>Percentage</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+                                        @foreach (var x in Model.row)
+                                        {
+
+                                            @if (x.IzbornaJedinica == "Washington")
+                                            {
+                                                <tr>
+                                                    <td>@x.Kandidat</td>
+                                                    <td>@x.BrojOsvojenihGlasova</td>
+                                                    <td>@x.OverrideFile</td>
+                                                      <td>@x.Percentage</td>
+
+
+                                                </tr>
+                                            }
+                                        }
+
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Texas
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="border border-secondary rounded">
+                            <table class="table">
+                                <thead class="bg-light">
+
+                                    <tr>
+                                        <th>Candidates</th>
+                                        <th>Votes</th>
+                                        <th>Error</th>
+                                        <th>Percentage</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+
+                                        @foreach (var x in Model.row)
+                                        {
+
+                                            @if (x.IzbornaJedinica == "Texas")
+                                            {
+                                                <tr>
+                                                    <td>@x.Kandidat</td>
+                                                    <td>@x.BrojOsvojenihGlasova</td>
+                                                    <td>@x.OverrideFile</td>
+                                                      <td>@x.Percentage</td>
+
+
+                                                </tr>
+                                            }
+                                        }
+
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+@*<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>Constituency</th>
+            <th>Candidates</th>
+            <th>Votes</th>
+            <th>Error</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in @Model.row)
+        {
+            <tr>
+                <td>@x.IzbornaJedinica</td>
+                <td>@x.Kandidat</td>
+                <td>@x.BrojOsvojenihGlasova</td>
+                <td>@x.OverrideFile</td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>*@
+

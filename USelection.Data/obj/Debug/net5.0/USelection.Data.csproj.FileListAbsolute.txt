@@ -1,0 +1,15 @@
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\bin\Debug\net5.0\USelection.Data.deps.json
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\bin\Debug\net5.0\USelection.Data.runtimeconfig.json
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\bin\Debug\net5.0\USelection.Data.runtimeconfig.dev.json
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\bin\Debug\net5.0\USelection.Data.dll
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\bin\Debug\net5.0\ref\USelection.Data.dll
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\bin\Debug\net5.0\USelection.Data.pdb
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.csprojAssemblyReference.cache
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.AssemblyInfoInputs.cache
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.AssemblyInfo.cs
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.csproj.CoreCompileInputs.cache
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.dll
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\ref\USelection.Data.dll
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.pdb
+C:\Users\KeeN\source\repos\USelection.Web\USelection.Data\obj\Debug\net5.0\USelection.Data.genruntimeconfig.cache
