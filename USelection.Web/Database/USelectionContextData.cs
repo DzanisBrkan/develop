@@ -40,17 +40,17 @@ namespace USelection.Web.Database
                     new IzbornaJedinica()
                     {
                         Id = 1,
-                        Naziv = "Donald Trump",
+                        Naziv = "New York",
                     },
                     new IzbornaJedinica()
                     {
                         Id = 2,
-                        Naziv = "Hillary Clinton",
+                        Naziv = "Washington",
                     },
                     new IzbornaJedinica()
                     {
                         Id = 3,
-                        Naziv = "Joe Biden",
+                        Naziv = "Texas",
                     });
                 #endregion
 
